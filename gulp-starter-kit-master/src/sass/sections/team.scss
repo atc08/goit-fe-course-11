@@ -42,7 +42,7 @@
   opacity: 1;
   top: -10px;
   left: -10px;
-  box-shadow: 10px 10px rgb(149, 225, 211);
+  box-shadow: 10px 10px $color-6;
 }
 
 .team__list-namepos {
@@ -56,7 +56,7 @@
 }
 
 .team__item-name {
-  color: rgb(51, 51, 51);
+  color: $color-2;
   font-family: $main-font;
   font-size: 14px;
   font-weight: 400;
@@ -65,7 +65,7 @@
 }
 
 .team__item-position {
-  color: rgb(153, 153, 153);
+  color: $color-3;
   font-family: $second-font;
   font-size: 15px;
   font-weight: 300;
@@ -105,7 +105,7 @@
   align-items: center;
   width: 56px;
   height: 56px;
-  background-color: rgb(252, 227, 138);
+  background-color: $color-5;
   cursor: pointer;
 }
 
@@ -114,15 +114,15 @@
 }
 
 .overlay__item:hover {
-  background-color: rgb(243, 129, 129);
+  background-color: $color-4;
 }
 
 .overlay__item:hover .overlay__svg {
-  fill: rgb(255, 255, 255);
+  fill: $main-color;
 }
 
 .overlay__svg {
   width: 26px;
   height: 26px;
-  fill: rgb(243, 129, 129);
+  fill: $color-4;
 }
