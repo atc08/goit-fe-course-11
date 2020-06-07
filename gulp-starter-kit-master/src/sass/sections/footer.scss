@@ -6,53 +6,50 @@
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid $color-8;
-}
 
-.footer__text {
-  color: $color-2;
-  font-family: $main-font;
-  font-size: 14px;
-  font-weight: 400;
-}
+  &__text {
+    color: $color-2;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 400;
+  }
 
-.footer__link {
-  font-family: $main-font;
-  font-size: 14px;
-  font-weight: 400;
-  color: $color-4;
-}
+  &__link {
+    color: $color-4;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 400;
+  }
 
-.footer__form {
-  display: flex;
-}
+  &__form {
+    display: flex;
+    &-input {
+      width: 230px;
+      height: 40px;
+      border: 1px solid $color-7;
+      padding-left: 13px;
+      color: $color-2;
+      font-family: $second-font;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 24px;
+      &::placeholder {
+        color: $color-9;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
 
-.footer__form-input {
-  width: 230px;
-  height: 40px;
-  border: 1px solid $color-7;
-  padding-left: 13px;
-  color: $color-2;
-  font-family: $second-font;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 24px;
-}
-
-.footer__form-input::placeholder {
-  color: $color-9;
-}
-
-.footer__form-input:focus {
-  outline: none;
-}
-
-.footer__btn {
-  width: 150px;
-  height: 40px;
-  background-color: $color-6;
-  color: $main-color;
-  font-family: $main-font;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
+  &__btn {
+    width: 150px;
+    height: 40px;
+    background-color: $color-6;
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 }

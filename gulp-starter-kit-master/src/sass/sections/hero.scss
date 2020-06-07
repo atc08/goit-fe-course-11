@@ -12,6 +12,41 @@
   background-repeat: no-repeat;
   text-align: center;
   padding: 28px 80px 230px;
+
+  &__text {
+    color: $main-color;
+    font-family: $third-font;
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 36px;
+    margin-left: 6px;
+  }
+
+  &__title {
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 150px;
+    line-height: 141px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    width: 802px;
+    margin: 0 auto 108px;
+    letter-spacing: -5px;
+  }
+
+  &__btn {
+    width: 160px;
+    height: 40px;
+    border: 3px solid $main-color;
+    background-color: unset;
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 6px;
+  }
 }
 
 .header {
@@ -20,134 +55,101 @@
   justify-content: space-between;
   align-items: baseline;
   margin: 0 auto 152px;
+
+  &__logo {
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 30px;
+    font-weight: 700;
+  }
 }
 
-.header__logo {
-  color: $main-color;
-  font-family: $main-font;
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.navigation__wrapper {
+.navigation {
   display: flex;
-}
 
-.navigation__list {
-  display: flex;
-  width: 488px;
-  justify-content: space-between;
-  margin-right: 52px;
-}
+  &__list {
+    display: flex;
+    width: 488px;
+    justify-content: space-between;
+    margin-right: 52px;
+  }
 
-.navigation__item,
-.navigation__addlist-item {
-  cursor: pointer;
-}
+  &__item {
+    cursor: pointer;
+    &:hover {
+      .navigation__link {
+        color: $color-5;
+      }
+      .navigation__link::after {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
 
-.navigation__link {
-  color: $main-color;
-  font-family: $main-font;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
+  &__addlist-item {
+    cursor: pointer;
+    &:hover {
+      .navigation__svg {
+        color: $color-5;
+      }
+      .navigation__addlist-link::after {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
 
-.navigation__link::after,
-.navigation__btn::after,
-.navigation__addlist-link::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: $color-5;
-  margin-top: 8px;
-  visibility: hidden;
-  opacity: 0;
-}
+  &__link {
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
 
-.navigation__item:hover .navigation__link {
-  color: $color-5;
-}
+  &__link::after,
+  &__btn::after,
+  &__addlist-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: $color-5;
+    margin-top: 8px;
+    visibility: hidden;
+    opacity: 0;
+  }
 
-.navigation__item:hover .navigation__link::after {
-  visibility: visible;
-  opacity: 1;
-}
+  &__addlist {
+    width: 74px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.navigation__addlist {
-  width: 74px;
-  display: flex;
-  justify-content: space-between;
-}
+  &__svg {
+    width: 18px;
+    height: 15px;
+    fill: $main-color;
+  }
 
-.navigation__svg {
-  width: 18px;
-  height: 15px;
-  fill: $main-color;
-}
-
-.navigation__addlist-item:hover .navigation__svg {
-  fill: $color-5;
-}
-
-.navigation__addlist-item:hover .navigation__addlist-link::after {
-  visibility: visible;
-  opacity: 1;
-}
-
-.navigation__btn {
-  width: 18px;
-  height: 18px;
-  background-color: unset;
-}
-
-.navigation__btn-svg {
-  width: 18px;
-  height: 18px;
-  fill: $main-color;
-}
-
-.navigation__btn:hover .navigation__btn-svg {
-  fill: $color-5;
-}
-
-.navigation__btn:hover::after {
-  visibility: visible;
-  opacity: 1;
-}
-
-.hero__text {
-  color: $main-color;
-  font-family: $third-font;
-  font-size: 72px;
-  font-weight: 400;
-  margin-bottom: 36px;
-  margin-left: 6px;
-}
-
-.hero__title {
-  color: $main-color;
-  font-family: $main-font;
-  font-size: 150px;
-  line-height: 141px;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: block;
-  width: 802px;
-  margin: 0 auto 108px;
-  letter-spacing: -5px;
-}
-
-.hero__btn {
-  width: 160px;
-  height: 40px;
-  border: 3px solid $main-color;
-  background-color: unset;
-  color: $main-color;
-  font-family: $main-font;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-left: 6px;
+  &__btn {
+    width: 18px;
+    height: 18px;
+    background-color: unset;
+    &-svg {
+      width: 18px;
+      height: 18px;
+      fill: $main-color;
+    }
+    &:hover {
+      .navigation__btn-svg {
+        fill: $color-5;
+      }
+      &::after {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
 }
