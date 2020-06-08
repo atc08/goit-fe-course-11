@@ -1,8 +1,16 @@
 .team {
+  @extend %section-conteiner;
   padding-bottom: 78px;
 
   &__title {
+    @extend %section-title;
     margin-bottom: 42px;
+    &--italic {
+      @extend %section-title-italic;
+    }
+    &::after {
+      @extend %section-title-after;
+    }
   }
 
   &__description {

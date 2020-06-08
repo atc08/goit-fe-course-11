@@ -1,0 +1,35 @@
+%section-conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 46px;
+}
+
+%section-title {
+  color: $color-2;
+  font-family: $main-font;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 6px;
+}
+
+%section-title-italic {
+  display: block;
+  font-family: $third-font;
+  color: $color-2;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 16px;
+}
+
+%section-title-after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: 3px;
+  background-color: $color-4;
+  margin-top: 36px;
+}

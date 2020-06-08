@@ -1,4 +1,16 @@
 .services {
+  @extend %section-conteiner;
+  padding-bottom: 41px;
+  &__title {
+    @extend %section-title;
+    margin-bottom: 63px;
+    &--italic {
+      @extend %section-title-italic;
+    }
+    &::after {
+      @extend %section-title-after;
+    }
+  }
   &__list {
     display: flex;
     flex-wrap: wrap;

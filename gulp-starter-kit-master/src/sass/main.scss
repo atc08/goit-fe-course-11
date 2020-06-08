@@ -6,13 +6,10 @@
 @import './helpers/fonts.scss';
 @import './helpers/resolution.scss';
 @import './helpers/variables.scss';
+@import './helpers/placeholders.scss';
 @import './base.scss';
 
 @import './components/body.scss';
-@import './components/sections.scss';
-@import './components/section-title.scss';
-@import './components/section-italic.scss';
-@import './components/section-title-after.scss';
 
 @import './sections/hero.scss';
 @import './sections/services.scss';
