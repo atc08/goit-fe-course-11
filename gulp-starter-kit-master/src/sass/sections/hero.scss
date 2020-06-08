@@ -91,7 +91,7 @@
     cursor: pointer;
     &:hover {
       .navigation__svg {
-        color: $color-5;
+        fill: $color-5;
       }
       .navigation__addlist-link::after {
         visibility: visible;
